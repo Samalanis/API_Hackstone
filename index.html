@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Movies API</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400i|Open+Sans:400i,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <heading id="heading-1">
-      <h1> Let us find your next movie to watch! </h1>
-    </heading>
-    <h2>It is simple and easy.</br> You tell us the genre and we give you the movies to watch.</h2>
-    <form>
-    <select id="genreList">
+    <div id="heading-1">
+      <h1 id="openingText"> Give us a genre </br>and</br> we'll give you a movie.</h1>
+    </div>
+    
+
+<div id="form-container">
+    <form id="form-1">
+    <select id="selectList">
   <option value="28">Action</option>
   <option value="12">Adventure</option>
   <option value="16">Animation</option>
@@ -35,8 +39,10 @@
 </select>
     <input type="submit" value="Submit" id="submitbox">
     </form>
-<div id="displayResults">
+</div>
 
+<div id="heading-2" class="hiddenClass"><h2>It's that easy...</h2></div>
+<div id="displayResults">
 </div>
 <section id="errorHandle"></section>
 
@@ -45,4 +51,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-
